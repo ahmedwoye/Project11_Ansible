@@ -75,3 +75,8 @@
         dest: /usr/share/nginx/html/index.html
         mode: '0644'
 
+      handlers:
+    - name: Restart Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
