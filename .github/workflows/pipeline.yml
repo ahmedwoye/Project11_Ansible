@@ -28,5 +28,6 @@ jobs:
           ANSIBLE_HOST_KEY_CHECKING: "False"
           
         run: |
+          ls -ltr
           ansible --version
           ansible-playbook -i inventory/hosts.ini playbook/install.yml -C
