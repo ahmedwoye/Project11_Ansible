@@ -37,5 +37,5 @@
 
     - name: copy css file
       ansible.builtin.copy:
-        src: ../nginx-artefacts/assets/style.css
-        dest: /usr/share/nginx/html/assets/style.css
+        src: ../nginx-artefacts/assets/styles.css
+        dest: /usr/share/nginx/html/assets/styles.css
